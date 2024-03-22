@@ -1,14 +1,15 @@
 body {
   font-family: "Roboto", sans-serif;
-  background-color: #f2f2f2; /* Background color from Color Hunt */
-  color: #333; /* Text color */
-  margin: 0;
+  background-color: #f2f2f2;
+  color: #333;
   padding: 0;
+  margin: 0 auto;
+  max-width: 50em;
 }
 
 header {
-  background-color: #444; /* Header background color */
-  color: #fff; /* Header text color */
+  background-color: #444;
+  color: #fff;
   padding: 20px;
 }
 
