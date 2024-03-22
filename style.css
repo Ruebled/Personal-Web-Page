@@ -37,6 +37,7 @@ img {
 
 ul {
   list-style-type: none;
+  list-style: none;
 }
 
 li {
@@ -46,4 +47,9 @@ li {
 #contact img {
   width: 50px;
   height: auto;
+}
+
+.bullet_point {
+  height: 12px;
+  width: 12px;
 }
