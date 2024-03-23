@@ -1,34 +1,101 @@
+/* Color Hunt color palette chosen
+ * https://colorhunt.co/palette/22283131363f76abaeeeeeee
+ */
+
+:root {
+  --black-grey: #222831;
+  --grey: #31363f;
+  --olive-green: #76abae;
+  --white: #eeeeee;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+* {
+  color: var(--white);
+}
+
 body {
   font-family: "Roboto", sans-serif;
-  background-color: #f2f2f2;
-  color: #333;
-  padding: 0;
+  background-color: var(--grey);
   margin: 0 auto;
   max-width: 50em;
+  line-height: 1.5;
+  padding: 0em 1.5em;
 }
 
 header {
-  background-color: #444;
-  color: #fff;
+  background-color: var(--black-grey);
+  display: flex;
   padding: 20px;
+  line-height: 1.2;
+  padding: 9vw 2em;
+}
+
+header img {
+  display: inline-block;
+  vertical-align: top;
+  width: 140px;
+  height: auto;
 }
 
 header h1 {
+  font-size: 2.5em;
+  font-weight: 300;
   margin: 0;
+  width: 100%;
 }
 
+header a {
+  align-items: flex-end;
+  border: 1px solid #e81c4f;
+  border-radius: 290486px;
+  font-size: 0.6em;
+  letter-spacing: 0.2em;
+  padding: 1em 2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: none 300ms ease-out;
+  transition-property: color, background;
+}
+
+section#hobbies {
+  padding: 20px;
+  background-color: var(--olive-green);
+}
+
+section#contact {
+  background-color: var(--black-grey);
+}
+
+section#contact h2 {
+  margin: 0px;
+}
+
+section#contact {
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  color: #e81c4f;
+}
+
+/* h2 {
+  margin-top: 1em;
+  padding-top: 1em;
+} */
+
 nav a {
-  color: #fff;
+  color: var(--white);
   text-decoration: none;
   margin-right: 20px;
 }
 
 nav a:hover {
-  text-decoration: underline;
-}
-
-section {
-  padding: 20px;
+  background: #e81c4f;
 }
 
 img {
@@ -51,6 +118,6 @@ li {
 }
 
 .bullet_point {
-  height: 12px;
-  width: 12px;
+  height: 15px;
+  width: 15px;
 }
