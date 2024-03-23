@@ -29,9 +29,10 @@ body {
 header {
   background-color: var(--black-grey);
   display: flex;
+  flex-direction: column;
   padding: 20px;
   line-height: 1.2;
-  padding: 9vw 2em;
+  padding: 5vw 2em;
 }
 
 header img {
@@ -39,6 +40,11 @@ header img {
   vertical-align: top;
   width: 140px;
   height: auto;
+  margin: auto;
+  margin-left: 1em;
+  margin-bottom: 2em;
+  max-width: 100%;
+  border-radius: 50%;
 }
 
 header h1 {
@@ -59,6 +65,13 @@ header a {
   text-decoration: none;
   transition: none 300ms ease-out;
   transition-property: color, background;
+}
+
+section#intro {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 section#hobbies {
@@ -83,15 +96,15 @@ a {
   color: #e81c4f;
 }
 
-/* h2 {
-  margin-top: 1em;
-  padding-top: 1em;
-} */
+nav {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+}
 
 nav a {
   color: var(--white);
   text-decoration: none;
-  margin-right: 20px;
 }
 
 nav a:hover {
@@ -99,8 +112,6 @@ nav a:hover {
 }
 
 img {
-  max-width: 100%;
-  border-radius: 50%;
 }
 
 ul {
@@ -120,4 +131,20 @@ li {
 .bullet_point {
   height: 15px;
   width: 15px;
+}
+
+section#contact {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+
+section#contact p {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+}
+
+i {
+  margin: 5px;
 }
